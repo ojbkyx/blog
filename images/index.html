@@ -104,7 +104,7 @@ if (autoChangeMode === '1') {
   return setting
 }
 
-var guestInfo = requestSetting(['nick','mail','link'],'昵称(必填),邮箱(必填),link')
+var guestInfo = requestSetting(['nick','mail','link'],'nick,mail,link')
 var requiredFields = requestSetting(['nick','mail'],'nick,mail')
 
 window.valine = new Valine({
