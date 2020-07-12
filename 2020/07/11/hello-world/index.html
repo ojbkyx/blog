@@ -117,14 +117,14 @@ if (autoChangeMode === '1') {
   return setting
 }
 
-var guestInfo = requestSetting(['nick','mail','link'],'nick,mail,link')
+var guestInfo = requestSetting(['nick','mail','link'],'昵称(必填),邮箱(必填),link')
 var requiredFields = requestSetting(['nick','mail'],'nick,mail')
 
 window.valine = new Valine({
   el:'#vcomment',
   appId: 'lBLK9Q1FfvCm9vNxuo1ONbtx-gzGzoHsz',
   appKey: '8x8wCvy1Jm0rjnR6A8Ps5a6g',
-  placeholder: 'Please leave your footprints',
+  placeholder: '昵称出输入QQ号按Tab自动填充邮箱',
   avatar: 'monsterid',
   meta: guestInfo,
   pageSize: '10',
